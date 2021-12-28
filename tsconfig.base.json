@@ -10,15 +10,27 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mintit/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@mintit/model-spec": ["libs/model-spec/src/index.ts"],
-      "@mintit/redux-provider": ["libs/redux-provider/src/index.ts"]
+      "@mintit/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@mintit/model-spec": [
+        "libs/model-spec/src/index.ts"
+      ],
+      "@mintit/redux-provider": [
+        "libs/redux-provider/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

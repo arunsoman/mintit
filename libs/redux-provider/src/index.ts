@@ -1,2 +1,4 @@
-export * from './lib/counter.slice';
-export * from './lib/redux-provider';
+
+export * from './lib/feature/counter.slice';
+export * from './store';
+export * from './hooks';

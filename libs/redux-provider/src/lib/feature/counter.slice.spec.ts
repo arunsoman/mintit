@@ -4,20 +4,23 @@ describe('counter reducer', () => {
   it('should handle initial state', () => {
     const expected = counterAdapter.getInitialState({
       loadingStatus: 'not loaded',
-      error: null,
+      error: null
     });
 
     expect(counterReducer(undefined, { type: '' })).toEqual(expected);
   });
 
   it('should handle fetchCounters', () => {
-    let state = counterReducer(undefined, fetchCounter.pending(null, null));
+    let state = counterReducer(
+      undefined,
+      fetchCounter.pending(null, null)
+    );
 
     expect(state).toEqual(
       expect.objectContaining({
         loadingStatus: 'loading',
         error: null,
-        entities: {},
+        entities: {}
       })
     );
 
@@ -30,7 +33,7 @@ describe('counter reducer', () => {
       expect.objectContaining({
         loadingStatus: 'loaded',
         error: null,
-        entities: { 1: { id: 1 } },
+        entities: { 1: { id: 1 } }
       })
     );
 
@@ -43,7 +46,7 @@ describe('counter reducer', () => {
       expect.objectContaining({
         loadingStatus: 'error',
         error: 'Uh oh',
-        entities: { 1: { id: 1 } },
+        entities: { 1: { id: 1 } }
       })
     );
   });
