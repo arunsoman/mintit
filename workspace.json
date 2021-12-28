@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "model-spec": "libs/model-spec",
+    "redux-provider": "libs/redux-provider",
+    "web": "apps/web",
+    "web-e2e": "apps/web-e2e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "root": "libs/model-spec",
+  "sourceRoot": "libs/model-spec/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/model-spec/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/model-spec"],
+      "options": {
+        "jestConfig": "libs/model-spec/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
