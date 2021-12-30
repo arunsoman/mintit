@@ -13,3 +13,13 @@ export interface IAlgo{
     updatedAt: Date
     richText: string
 }
+
+export interface ILogin {
+    isLoggedIn: boolean;
+    userName: string;
+    password: string;
+    token: string;
+    tokenExpiration: string;
+    status: string;
+    err: string;
+}

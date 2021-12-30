@@ -21,6 +21,9 @@
       "@mintit/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ],
+      "@mintit/app-features": [
+        "libs/app-features/src/index.ts"
+      ],
       "@mintit/model-spec": [
         "libs/model-spec/src/index.ts"
       ],

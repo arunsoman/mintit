@@ -3,6 +3,7 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "app-features": "libs/app-features",
     "model-spec": "libs/model-spec",
     "redux-provider": "libs/redux-provider",
     "web": "apps/web",

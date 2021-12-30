@@ -7,6 +7,6 @@ router.put('/:email', async(req, res) => { res.send({ message: 'Welcome to put a
 router.delete('/:email', async(req, res) => { res.send({ message: 'Welcome to delete appUser'+ req.params.email }) })
 router.get('/:email', async(req, res) => { res.send({ message: 'Welcome to get appUser'+ req.params.email }) })
 router.patch('/:email', async(req, res) => { res.send({ message: 'Welcome to patch appUser'+ req.params.email }) })
-console.log('appUser routes loaded')
+console.log('appUser ^^^^^^^^^^^^^^^^^^^^^^^^routes loaded')
 return router
 }
